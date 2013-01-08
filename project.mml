@@ -1,7 +1,7 @@
 {
   "bounds": [
     -180,
-    -85.0511,
+    -58.9953,
     180,
     85.0511
   ],
@@ -16,7 +16,9 @@
   "maxzoom": 5,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
-    "style.mss"
+    "style.mss",
+    "visitedStatus.mss",
+    "fills.mss"
   ],
   "Layer": [
     {
@@ -40,23 +42,80 @@
     {
       "geometry": "polygon",
       "extent": [
-        -179.99999999999997,
+        -124.95363440005697,
+        -16.536406345284952,
+        109.92980716353523,
+        66.96929759385118
+      ],
+      "id": "lakes_110mbands",
+      "class": "banded",
+      "Datasource": {
+        "file": "http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/physical/ne_110m_lakes.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "lakes_110mbands"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -171.79111060289117,
+        18.916190000000103,
+        -66.96466,
+        71.35776357694174
+      ],
+      "id": "states_110m_band",
+      "class": "banded",
+      "Datasource": {
+        "file": "http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_1_states_provinces_lakes_shp.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "states_110m_band"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -180,
         -85.051,
         180,
-        83.64513000000001
+        83.64513000000002
       ],
       "id": "countries_110m",
-      "class": "countries",
+      "class": "countries banded",
       "Datasource": {
-        "file": "http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip",
+        "file": "http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries_lakes.zip",
         "id": "countries_110m",
-        "project": "Classroom_map",
+        "project": "personal-location-map",
         "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
       "name": "countries_110m"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -171.79111060289117,
+        18.916190000000103,
+        -66.96466,
+        71.35776357694174
+      ],
+      "id": "states_110m",
+      "class": "states",
+      "Datasource": {
+        "file": "http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_1_states_provinces_lakes_shp.zip",
+        "id": "states",
+        "project": "personal-location-map",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "states_110m"
     },
     {
       "geometry": "polygon",
@@ -69,7 +128,10 @@
       "id": "lakes_110m",
       "class": "lakes",
       "Datasource": {
-        "file": "http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/physical/ne_110m_lakes.zip"
+        "file": "http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/physical/ne_110m_lakes.zip",
+        "id": "lakes_110m",
+        "project": "personal-location-map",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
