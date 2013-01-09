@@ -13,7 +13,7 @@
     text-size:10;
     text-placement-type: simple;
     text-placements: "E,W,NE,SE,NW,SW,16,14,12";
-    text-dy: 10;
-    text-dx: 10;
+    text-dy: 8;
+    text-dx: 8;
   }
 }
