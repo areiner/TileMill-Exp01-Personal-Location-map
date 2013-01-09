@@ -1,19 +1,19 @@
-//@format1: "<Format fill='black'>";
-@format2: "[Place]";
-@label: @format2+"+'\n'+[numYearsLived]+' years'";
+@format: "<Format fill='black' size='15'>" + "[Place]" + "</Format>";
+@label: @format+"+'\n'+[numYearsLived]+' years'";
 
 #placesIHaveLived {
   marker-width:6;
   marker-fill:#f45;
   marker-line-color:#813;
   marker-allow-overlap:true;
-  [zoom>=3] {
+  [zoom>=4] {
     text-name: @label;
+    text-fill:grey;
     text-face-name: "DejaVu Sans Book";
-    text-size:15;
+    text-size:10;
     text-placement-type: simple;
-    text-placements: "N,S,E,W,NE,SE,NW,SW,16,14,12";
-    text-dy: 3;
-    text-dx: 3;
+    text-placements: "E,W,NE,SE,NW,SW,16,14,12";
+    text-dy: 10;
+    text-dx: 10;
   }
 }
