@@ -3,7 +3,6 @@
 //soft bands and water echo excluding US to be handled by states and Antarctica which has odd rendering.
 .banded::banding [name!='United States'][name != 'Antarctica']{
   image-filters: agg-stack-blur(2,2);
-  //comp-op: multiply;
   line-join: round;
   line-cap: round;
   line-color: @band;

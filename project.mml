@@ -13,12 +13,13 @@
   "format": "png",
   "interactivity": false,
   "minzoom": 0,
-  "maxzoom": 5,
+  "maxzoom": 6,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss",
     "visitedStatus.mss",
-    "fills.mss"
+    "fills.mss",
+    "places.mss"
   ],
   "Layer": [
     {
@@ -137,6 +138,27 @@
       "srs": "",
       "advanced": {},
       "name": "lakes_110m"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -93.01,
+        35.416667,
+        136.766667,
+        45.084722
+      ],
+      "id": "placesIHaveLived",
+      "class": "",
+      "Datasource": {
+        "file": "https://docs.google.com/spreadsheet/pub?key=0ArWnCvBujkj9dHByVDJxT0k2and3SnlMYlpSaG9kSHc&output=csv",
+        "id": "placesIHaveLived",
+        "project": "personal-location-map",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "placesIHaveLived"
     }
   ],
   "scale": 1,
