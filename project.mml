@@ -6,12 +6,20 @@
     85.0511
   ],
   "center": [
-    -90,
-    42.8115,
-    2
+    -166.6406,
+    37.1603,
+    1
   ],
   "format": "png",
-  "interactivity": false,
+  "interactivity": {
+    "layer": "placesIHaveLived",
+    "template_teaser": "{{{Place}}}, lived here from {{{Start Date}}} to {{{End Date}}}",
+    "fields": [
+      "Place",
+      "Start Date",
+      "End Date"
+    ]
+  },
   "minzoom": 0,
   "maxzoom": 6,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
@@ -163,7 +171,8 @@
   ],
   "scale": 1,
   "metatile": 4,
-  "name": "Tilemill and NED2.0 experiments",
-  "description": "Quickly built styled map of places I've lived. (Facinating I know....)",
-  "attribution": ""
+  "name": "Places I have lived",
+  "description": "Quickly built and styled map of places I've lived. (Facinating I know....)",
+  "attribution": "",
+  "legend": "A simple map of the world as it relates to me."
 }
